@@ -1,6 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const request = require("request");
 const https = require("https")
 
 const app = express();
@@ -58,13 +57,6 @@ app.post("/failure", (req, res) => {
     res.redirect("/")
 })
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(3000, () => {
     console.log("Server is running on port 3000");
 })
-
-//API Key
-//d391af3f58e86672968c9d41f70f4866-us21
-
-
-//id
-//c5f5fd9bfe
